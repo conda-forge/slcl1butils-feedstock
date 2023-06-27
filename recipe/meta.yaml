@@ -28,7 +28,6 @@ requirements:
     - python >=3.9
     - xarray
     - numpy
-    - netcdf4
     - shapely
     - xarray-datatree
     - importlib-resources
@@ -37,6 +36,7 @@ requirements:
     - fsspec
     - aiohttp
     - PyYAML
+    - matplotlib
 
 test:
   imports:
