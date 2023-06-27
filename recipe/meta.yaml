@@ -36,7 +36,7 @@ requirements:
     - fsspec
     - aiohttp
     - PyYAML
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
