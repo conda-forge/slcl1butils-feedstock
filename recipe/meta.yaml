@@ -1,5 +1,5 @@
 {% set name = "slcl1butils" %}
-{% set version = "2023.9.7" %}
+{% set version = "2024.1.16.post2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/slcl1butils-{{ version }}.tar.gz
-  sha256: 22c8f57c029bc72d572aae9a52999bc53e3fab5535e11c41e8f8c9199ece8ba4
+  sha256: 23e783477a9b19312d653647b7c4cf9f6a1e54bfe3e9196ed4abc3858ecc3ca2
 
 build:
   entry_points:
@@ -27,17 +27,20 @@ requirements:
   run:
     - python >=3.9
     - xarray
+    - dask
     - numpy
     - netcdf4
     - shapely
+    - scipy
+    - matplotlib-base
     - xarray-datatree
     - tqdm
     - zarr
     - fsspec
     - aiohttp
     - PyYAML
-    - matplotlib
-    - scipy
+    - holoviews
+    - geoviews
 
 test:
   imports:
