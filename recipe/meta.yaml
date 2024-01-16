@@ -31,6 +31,8 @@ requirements:
     - numpy
     - netcdf4
     - shapely
+    - scipy
+    - matplotlib-base
     - xarray-datatree
     - tqdm
     - zarr
