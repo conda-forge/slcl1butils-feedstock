@@ -1,13 +1,13 @@
 {% set name = "slcl1butils" %}
-{% set version = "2024.1.18.post1" %}
+{% set version = "2025.1.30" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/slcl1butils-{{ version }}.tar.gz
-  sha256: 0d4d1cea54051fee03295f0a4dd38107c0f10187b6b9878eaf84d3a532a49b72
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/slcl1butils-{{ version }}.tar.gz
+  sha256: 53def84d12dd99a2b46ac869c523ce0f6bb9c35e8d8a8b5b15533fb27974c13c
 
 build:
   entry_points:
