@@ -1,5 +1,6 @@
 {% set name = "slcl1butils" %}
 {% set version = "2025.1.30" %}
+{% set python_min = '3.9' %}
 
 package:
   name: {{ name|lower }}
@@ -20,12 +21,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=64.0
     - setuptools-scm
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - xarray
     - dask
     - numpy
@@ -52,6 +53,7 @@ test:
     - do_WV_L1C_SAFE_from_L1B_SAFE --help
     - stack_WV_L1C_to_ZARR --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
