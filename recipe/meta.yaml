@@ -27,14 +27,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - xarray
+    - xarray >=2024.11.0
     - dask
     - numpy
     - netcdf4
     - shapely
     - scipy
     - matplotlib-base
-    - xarray-datatree
     - tqdm
     - zarr
     - fsspec
