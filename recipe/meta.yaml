@@ -41,6 +41,7 @@ requirements:
     - PyYAML
     - holoviews
     - geoviews
+    - pyogrio
 
 test:
   imports:
