@@ -1,6 +1,6 @@
 {% set name = "slcl1butils" %}
 {% set version = "2025.1.30" %}
-{% set python_min = '3.9' %}
+{% set python_min = '3.10' %}
 
 package:
   name: {{ name|lower }}
