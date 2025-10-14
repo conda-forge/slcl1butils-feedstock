@@ -42,6 +42,8 @@ requirements:
     - holoviews
     - geoviews
     - pyogrio
+    - rioxarray
+    - h5netcdf
 
 test:
   imports:
